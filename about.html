@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grocery List</title>
+</head>
+<body>
+  <h1>Grocery List</h1>
+  <h2>Rumnik Ghuman</h2>
+  <h2>Student ID: 1088352</h2>
+  <ul>
+    <script type="module">
+      import { groceries } from './grocery.ts';
+
+      groceries.forEach((item) => {
+        document.write(`<li>${item.quantity} ${item.name}</li>`);
+      });
+    </script>
+  </ul>
+</body>
+</html>
